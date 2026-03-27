@@ -1,0 +1,36 @@
+diff --git a/index.html b/index.html
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..2d99f9872f78dca0231943c1dfb9a7b8f02dd78b 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,31 @@
++<!doctype html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>The Long Drive - HTML5 Canvas Prototype</title>
++  <style>
++    html,
++    body {
++      width: 100%;
++      height: 100%;
++      margin: 0;
++      overflow: hidden;
++      background: #111;
++      font-family: Arial, Helvetica, sans-serif;
++    }
++
++    #gameCanvas {
++      display: block;
++      width: 100vw;
++      height: 100vh;
++      cursor: crosshair;
++      image-rendering: auto;
++    }
++  </style>
++</head>
++<body>
++  <canvas id="gameCanvas"></canvas>
++  <script src="javascript.js"></script>
++</body>
++</html>
