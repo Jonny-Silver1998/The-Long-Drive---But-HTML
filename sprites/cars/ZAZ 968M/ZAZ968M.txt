@@ -1,0 +1,6 @@
+Specification:
+
+Engine Power:	40 hp
+Curb Weight	840 kg
+Max Speed	118 km
+0-100 km/h (Acceleration) ~32 sec
