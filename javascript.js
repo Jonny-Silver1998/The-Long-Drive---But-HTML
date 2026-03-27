@@ -1,5 +1,3 @@
-diff --git a/javascript.js b/javascript.js
-index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..3a1df91abe17ed47af8193b227dade03c39bb580 100644
 --- a/javascript.js
 +++ b/javascript.js
 @@ -0,0 +1,1091 @@
