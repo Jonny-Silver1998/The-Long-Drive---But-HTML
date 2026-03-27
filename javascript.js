@@ -339,6 +339,9 @@ function addItem(type, x, y) {
 }
 
 function setupInitialWorld() {
+  // Seed road beneath spawn so the scene starts grounded.
+  placeRoadTile(0, 0, "straightV", 0);
+
   addItem("engine", game.car.x + CONFIG.world.itemSpawnOffset, game.car.y + 20);
   addItem("canister", game.car.x - CONFIG.world.itemSpawnOffset, game.car.y + 50);
   addItem("food", game.player.x + 80, game.player.y + 30);
@@ -1084,6 +1087,8 @@ function gameLoop(ts) {
 
 preloadImages(imagePaths, ({ failed }) => {
   setupInitialWorld();
+  game.camera.x = game.player.x;
+  game.camera.y = game.player.y;
   if (failed > 0) {
     console.warn(`Some images failed to load (${failed}). Placeholder rendering will be used where needed.`);
   }
